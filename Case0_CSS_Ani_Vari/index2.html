@@ -45,6 +45,8 @@ div.grid2 {
 
 div.grid3 {
 	background-color: blue;
+	animation-name: ani_grid3;
+	animation-duration: 4s;
 }
 
 div.grid4 {
@@ -64,6 +66,11 @@ div.grid4 {
 	60% {background-color: red;}
 	80% {background-color: blue;}
 	100% {background-color: green;}
+}
+
+@keyframes ani_grid3 {
+    from {transform: translate(-100px, 10%);}
+    to {transform: translate(100px, 10%);}
 }
 
 .fas {

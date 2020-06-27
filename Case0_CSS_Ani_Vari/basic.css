@@ -67,8 +67,8 @@ div.grid4 {
 }
 
 @keyframes ani_grid3 {
-    from {transform: scale(0.5) translate(-100%, -100%);}
-    to {transform: scale(0.5) translate(100%, 100%);}
+    from {transform: rotate(3600deg);}
+    to {transform: rotate(0deg);}
 }
 
 .fas {
