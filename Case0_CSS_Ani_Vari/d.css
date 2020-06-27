@@ -5,8 +5,8 @@ div.container {
 }
 
 div.grid {
- width: 80px;
- height: 80px;
+ width: 70px;
+ height: 70px;
  margin: 5px;
  line-height: 80px;
  box-shadow: 5px 5px 5px gray;
