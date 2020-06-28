@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- for "Content-Security-Policy" -->
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com https://csi.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.gstatic.com https://*.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com; media-src *; img-src 'self' 'unsafe-inline' https://*.gstatic.com https://*.googleapis.com; connect-src *;">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/googlefonts.css">
+    <link href="css/weather-icons.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="main-container" class="container">
+	<h1 id="city" class="text-center">CITY</h1>
+	<p id="date" class="text-center">Date</p>
+    <div id="current-weather" class="container">
+		<div class="row">
+			<div align="center">
+				<h1 id="temp"></h1>
+			</div>
+		</div>
+
+		<div class="row text-center">
+			<div >
+				<h1 id="weather-description">浪高(cm)</h1>
+			</div>
+		</div>
+    </div>
+    <hr class="style1">
+    <div id="forecast" class="container">
+		<div class="row">
+			<div class="col-xs-4 text-center">
+				<p id="day2">Day 2</p>
+				<p id="day2-high-low">Day 2 high/low</p>
+			</div>
+			<div class="col-xs-4 text-center">
+				<p id="day3">Day 3</p>
+				<p id="day3-high-low">Day 3 high/low</p>
+			</div>
+			<div class="col-xs-4 text-center">
+				<p id="day4">Day 4</p>
+				<p id="day4-high-low">Day 4 high/low</p>
+			</div>
+		</div>
+    </div>
+</div> <!-- end main-container -->
+	<!-- include cordova.js -->
+	<script src="cordova.js"></script>
+	
+	<!-- Why are Javascripts here? -->
+	<script src="js/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/skycons.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+
+<footer> <!-- Select at footer -->
+    <div id="attribution-panel" class="container">
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div id="panel-heading" class="panel-heading">
+                    <h4 class="panel-title" style="font-size: 12px">
+                        <a data-toggle="collapse" href="#collapse1">選擇觀測浮標</a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse">
+                    <ul class="list-group" style="font-size: 10px">
+                        <li class="list-group-item btn_city_select" id=1>蘭嶼浮標</li>
+                        <li class="list-group-item btn_city_select">富貴角資料浮標</li>
+                        <li class="list-group-item btn_city_select">龍洞浮標</li>
+                        <li class="list-group-item btn_city_select">馬祖浮標</li>
+                        <li class="list-group-item btn_city_select">花蓮浮標</li>
+                        <li class="list-group-item btn_city_select">金門浮標</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
